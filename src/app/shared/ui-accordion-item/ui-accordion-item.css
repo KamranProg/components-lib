@@ -1,0 +1,35 @@
+:host {
+  border-bottom: 1px solid rgb(0,0,0,0.1);
+}
+
+.accordion-expand {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1.5s ease, opacity 0.3s ease;
+}
+
+.accordion-expand.open {
+  max-height: 500px; /* large enough for most content */
+  opacity: 1;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+button:hover .label {
+  text-decoration: underline;
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}

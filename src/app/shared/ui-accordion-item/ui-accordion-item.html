@@ -1,0 +1,14 @@
+<div class="hover:bg-gray">
+  <button class="full-x p-2 flex items-center justify-between" (click)="toggle()">
+    <span class="label">{{ title() }}</span>
+    <span class="chevron" [class.open]="isOpen()">⏷</span>
+  </button>
+
+  <div class="accordion-expand" [class.open]="isOpen()">
+    @if (isOpen()) {
+      <div class="p-2">
+        <ng-content />
+      </div>
+    }
+  </div>
+</div>
