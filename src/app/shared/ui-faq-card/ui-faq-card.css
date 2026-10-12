@@ -1,0 +1,11 @@
+.faq-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.faq-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}

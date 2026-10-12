@@ -1,0 +1,10 @@
+.accordion-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion-group:hover {
+  box-shadow: var(--shadow-md);
+}

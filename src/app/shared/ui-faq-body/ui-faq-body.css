@@ -1,0 +1,5 @@
+.faq-body {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}

@@ -1,33 +1,68 @@
 :host {
-  border-bottom: 1px solid rgb(0,0,0,0.1);
+  display: block;
+  border-bottom: 1px solid var(--color-border);
+}
+
+:host(:last-child) {
+  border-bottom: none;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--spacing-4) var(--spacing-6);
+  text-align: left;
+  transition: all var(--transition-fast);
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+}
+
+.accordion-button:hover {
+  background-color: var(--color-surface-alt);
+}
+
+.accordion-button:active {
+  background-color: var(--color-primary-light);
+}
+
+.label {
+  flex: 1;
 }
 
 .accordion-expand {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 1.5s ease, opacity 0.3s ease;
+  transition: max-height var(--transition-slow) ease, opacity var(--transition-base) ease;
+  background-color: var(--color-surface-alt);
 }
 
 .accordion-expand.open {
-  max-height: 500px; /* large enough for most content */
+  max-height: 1000px;
   opacity: 1;
 }
 
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  text-align: left;
-}
-
-button:hover .label {
-  text-decoration: underline;
+.accordion-content {
+  padding: var(--spacing-4) var(--spacing-6);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
 }
 
 .chevron {
-  display: inline-block;
-  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform var(--transition-base) ease;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
 }
 
 .chevron.open {
