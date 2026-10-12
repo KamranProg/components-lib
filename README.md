@@ -2,6 +2,40 @@
 
 A production-ready Angular 20 component library featuring reusable UI components styled with Tailwind CSS. Built with modern standalone components and interactive demos.
 
+## 🎨 Components Gallery
+
+The library includes four main components, each with interactive demos:
+
+### **Icon Button**
+A flexible, accessible icon button component with multiple variants:
+- **Default variant** - Transparent background with hover state
+- **Filled variant** - Solid blue background with white icons
+- **Ghost variant** - Bordered style with clean appearance
+- All variants support disabled state and smooth transitions
+
+### **Card**
+A versatile container component perfect for content organization:
+- **Basic cards** - Simple header and body sections
+- **Cards with footer** - Additional action section with buttons
+- Elegant border and shadow effects
+- Smooth hover animations
+
+### **Accordion**
+An expandable accordion group component for organized content:
+- **Smooth animations** - Content expands/collapses with fluid transitions
+- **Multiple items** - Group multiple accordion items together
+- **Visual indicators** - Chevron icons show expand/collapse state
+- **Responsive design** - Works on all screen sizes
+
+### **FAQ List**
+A specialized component for frequently asked questions:
+- **Interactive questions** - Click to expand answers
+- **Clean typography** - Professional styling with proper hierarchy
+- **Integrated accordion** - Uses accordion behavior under the hood
+- **Professional appearance** - Styled for modern web applications
+
+**[View Live Demo →](http://localhost:4200/)** Start the dev server and navigate to the URL to interact with all components.
+
 ## 🎯 Overview
 
 ComponentsLib provides a curated set of accessible, customizable UI components for rapid application development. Each component is self-contained, fully typed, and demonstrated through interactive examples.
