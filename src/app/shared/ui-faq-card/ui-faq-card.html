@@ -1,0 +1,7 @@
+<div (click)="toggle()">
+  <ng-content select="ui-faq-title"></ng-content>
+</div>
+
+@if (isOpen()) {
+<ng-content select="ui-faq-body"></ng-content>
+}

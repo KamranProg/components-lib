@@ -1,0 +1,15 @@
+<ui-faq-card
+  [isOpen]="openFaqId() === 1"
+  (toggle)="setOpenFaq(1)"
+>
+  <ui-faq-title>What is Angular?</ui-faq-title>
+  <ui-faq-body>Angular is a TypeScript framework for building web apps.</ui-faq-body>
+</ui-faq-card>
+
+<ui-faq-card
+  [isOpen]="openFaqId() === 2"
+  (toggle)="setOpenFaq(2)"
+>
+  <ui-faq-title>What are Signals?</ui-faq-title>
+  <ui-faq-body>Signals are reactive primitives introduced in Angular 16.</ui-faq-body>
+</ui-faq-card>
