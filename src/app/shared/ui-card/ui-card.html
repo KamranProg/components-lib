@@ -1,0 +1,17 @@
+<div class="card">
+  @if (true) {
+    <div class="card-header">
+      <ng-content select="[card-header]"></ng-content>
+    </div>
+  }
+
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+
+  @if (true) {
+    <div class="card-footer">
+      <ng-content select="[card-footer]"></ng-content>
+    </div>
+  }
+</div>

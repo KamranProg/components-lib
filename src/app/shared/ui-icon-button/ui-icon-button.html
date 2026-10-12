@@ -1,0 +1,12 @@
+<button
+  type="{{ type() }}"
+  [attr.aria-label]="ariaLabel()"
+  [disabled]="disabled()"
+  [class]="{
+    'icon-btn': true,
+    'filled': variant() === 'filled',
+    'ghost': variant() === 'ghost'
+  }"
+>
+  <ng-content select="[icon]"></ng-content>
+</button>
