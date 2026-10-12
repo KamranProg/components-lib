@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { IconButtonDemoComponent } from '@demos/icon-button-demo/icon-button-demo';
+import { CardDemoComponent } from '@demos/card-demo/card-demo';
+import { AccordionDemoComponent } from '@demos/accordion-demo/accordion-demo';
+import { FaqListDemoComponent } from '@demos/faq-list-demo/faq-list-demo';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [IconButtonDemoComponent, CardDemoComponent, AccordionDemoComponent, FaqListDemoComponent],
+  templateUrl: './app.html'
 })
-export class App {
-  protected title = 'components-lib';
-}
+export class App {}
